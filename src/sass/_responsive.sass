@@ -1,0 +1,203 @@
+@media (min-width: 576px) 
+    .container 
+        max-width: 540px
+@media (min-width: 768px)
+    .container 
+        max-width: 720px
+@media (min-width: 992px)
+    .container 
+        max-width: 960px
+@media (min-width: 1200px)
+    .container 
+        max-width: 1140px
+@media (min-width: 1400px)
+    .container 
+        max-width: 1200px
+
+@media (max-width: 1400px)
+    .section-banner
+        padding: 140px 0
+    .section-services .services__content .services__container .services__item
+        width: calc( 33.3% - 30px)
+        padding: 0 15px
+        .item__text
+            margin-left: 15px
+@media (max-width: 1200px)
+    
+    .section-banner
+        padding: 140px 0 80px
+        .banner__content .banner__text--main
+                font-size: 124px
+                line-height: 1.2
+                margin: 0 0 80px
+    .section-team .team__container .team__card .card__slide
+        height: 400px  
+
+@media (max-width: 992px)   
+    .caption
+        padding-bottom: 25px
+    .header .header__content .menu .menu__list .menu__item 
+        padding: 0 15px
+    
+    .section-banner
+        padding: 100px 0 80px
+        .banner__content 
+            .banner__text--main
+                font-size: 80px
+                letter-spacing: -2px
+                margin: 0 0 40px
+            .banner__text--seconary
+                font-size: 56px
+
+    .section-services .services__content .services__container .services__item
+        width: calc( 50% - 30px)
+        .item__text
+            margin-left: 15px
+    
+    .section-team 
+        .team__description
+            margin: 40px auto 50px  
+        .team__container .team__card 
+            width: calc( 33.3% - 15px)
+            padding-bottom: 0
+            .card__slide
+                height: 300px 
+                &::before
+                    top: -10px
+                    left: -10px
+                .card__list .card__item .card__link
+                    width: 40px
+                    height: 40px
+                
+                &:hover 
+                    .card__img, 
+                    .card__list 
+                        top: -6px
+                        left: -6px
+
+    .footer .footer__content .footer__form .form__field
+        width: 200px
+
+@media (max-width: 768px)   
+    .header 
+        z-index: 100
+        .container
+            max-width: unset
+        .header__content
+            .header__toggler
+                display: flex 
+                margin-left: auto
+                z-index: 10
+            .menu .menu__list
+                position: fixed
+                width: 100%
+                height: 0
+                left: 0
+                top: 0    
+                background: $cyan
+                z-index: 0
+                display: flex
+                flex-direction: column
+                flex-wrap: wrap
+                justify-content: center
+                align-items: center
+                transition: 0.4s
+                overflow: hidden
+
+                &--collapse
+                    height: 100%
+                
+                .menu__item
+                    height: max-content
+                    text-align: center
+                    margin: 15px
+    
+    .section-team .team__container .team__card .card__slide
+                    height: 275px 
+                    .card__list .card__item .card__link
+                        width: 35px
+                        height: 35px
+
+    .footer .footer__content 
+        .footer__copyright
+            display: block
+            margin: 20px 0
+            width: 100%
+            text-align: center
+        .footer__form 
+            width: 100%
+            justify-content: center
+            .form__field
+                width: calc( 100% - 145px )  
+                max-width: 200px                  
+
+    
+
+
+@media (max-width: 576px)    
+    .section-banner
+        padding: 80px 0 40px
+        .banner__content 
+            .banner__text--main
+                font-size: 52px
+                letter-spacing: -4px
+                margin: 0 0 40px
+            .banner__text--seconary
+                font-size: 36px
+
+    .section-services .services__content .services__container .services__item
+        width: 100%
+        padding: 0
+        max-width: 330px
+        margin: 30px auto 0px
+        .item__text
+            margin-left: 15px
+
+    .section-team 
+        padding-top: 40px
+        padding-bottom: 0
+        .team__container 
+            flex-wrap: wrap
+            .team__card 
+                width: 100%
+                max-width: 300px
+                margin: 0 auto 30px
+                padding: 0
+                padding-bottom: 0
+                .card__slide
+                    height: 375px 
+                    &::before
+                        top: -10px
+                        left: -10px
+                    .card__list .card__item .card__link
+                        width: 40px
+                        height: 40px
+                    
+                    &:hover 
+                        .card__img, 
+                        .card__list 
+                            top: -6px
+                            left: -6px
+
+@media (max-width: 375px)  
+    .footer .footer__content
+        .footer__copyright .footer__link
+            padding: 0
+            letter-spacing: -1px
+        .footer__form 
+            flex-wrap: wrap
+            min-width: unset
+            padding-bottom: 15px
+            .form__field
+                width: calc( 100% - 30px )
+                max-width: unset
+                margin-bottom: 15px
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+only screen and (-moz-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5)
+    .section-team .team__container .team__card .card__slide .card__img
+        display: none
+        &--retina
+            display: block
